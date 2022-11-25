@@ -12,6 +12,8 @@ namespace prova_AnaliseProjeto.Models
 
         public string? Nome { get; set; }
 
+        public string? Cpf {get; set;}
+
 
          public virtual ICollection<Pedido>? Pedido { get; set; }
     }

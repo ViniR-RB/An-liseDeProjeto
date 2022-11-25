@@ -10,11 +10,16 @@ namespace prova_AnaliseProjeto.Models
     {
         [Display(Name = "Código")]
         public int Id { get; set; }
-        public virtual ICollection<Produto>? Produto { get; set; }
+        public int? PagamentoId { get; set; }
+        public virtual Pagamento? Pagamento { get; set; }
+
+
+        [Display(Name = "Data_Do_Pedido")]
+        public DateTime DateTime { get; set; }
 
 
 
-        public Pagamento? Pagamento { get; set; }
+
 
 
 

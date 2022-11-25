@@ -11,8 +11,11 @@ namespace prova_AnaliseProjeto.Models
         public int Id { get; set; }
 
 
-        public int? PedidoId { get; set; }
-        public virtual Pedido? Pedido { get; set; }
+        [Display(Name = "Data_Do_Pagamento")]
+        public DateTime DateTime { get; set; }
+        
+
+         public virtual ICollection<Pedido>? Pedido { get; set; }
 
         public double? Valor { get; set; }
     }
