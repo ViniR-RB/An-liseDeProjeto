@@ -16,7 +16,7 @@ namespace prova_AnaliseProjeto.Models
 
         public string? Discriminator { get; }
 
-
+        public Pedido? Pedido { get; set; }
         public double? Valor { get; set; }
     }
 }

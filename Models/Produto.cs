@@ -14,7 +14,7 @@ namespace prova_AnaliseProjeto.Models
 
         [Display(Name = "Descrição")]
         public string? descricao { get; set; }
-        public Pedido? Pedido { get; set; }
+        // public Pedido? Pedido { get; set; }
 
 
     }
