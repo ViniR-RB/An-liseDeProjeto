@@ -19,8 +19,10 @@ namespace prova_AnaliseProjeto.Models
 
 
 
+        public List<Produto>? items { get; set; }
 
 
+        // public ICollection<Produto>? Produto { get; set; }
 
 
 
