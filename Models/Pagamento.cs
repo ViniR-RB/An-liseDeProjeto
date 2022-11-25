@@ -13,9 +13,9 @@ namespace prova_AnaliseProjeto.Models
 
         [Display(Name = "Data_Do_Pagamento")]
         public DateTime DateTime { get; set; }
-        
 
-         public virtual ICollection<Pedido>? Pedido { get; set; }
+        public string? Discriminator { get; }
+
 
         public double? Valor { get; set; }
     }

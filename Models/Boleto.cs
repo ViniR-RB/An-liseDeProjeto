@@ -7,6 +7,6 @@ namespace prova_AnaliseProjeto.Models
 {
     public class Boleto : Pagamento
     {
-
+public Pedido? Pedido { get; set; }
     }
 }

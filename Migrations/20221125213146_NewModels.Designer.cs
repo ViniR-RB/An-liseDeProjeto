@@ -12,7 +12,7 @@ using prova_AnaliseProjeto.Models;
 namespace prova_AnaliseProjeto.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20221125204846_NewModels")]
+    [Migration("20221125213146_NewModels")]
     partial class NewModels
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -119,6 +119,12 @@ namespace prova_AnaliseProjeto.Migrations
                 {
                     b.HasBaseType("prova_AnaliseProjeto.Models.Pagamento");
 
+                    b.Property<int?>("PedidoId")
+                        .HasColumnType("integer")
+                        .HasColumnName("Boleto_PedidoId");
+
+                    b.HasIndex("PedidoId");
+
                     b.HasDiscriminator().HasValue("Boleto");
                 });
 
@@ -126,8 +132,13 @@ namespace prova_AnaliseProjeto.Migrations
                 {
                     b.HasBaseType("prova_AnaliseProjeto.Models.Pagamento");
 
+                    b.Property<int?>("PedidoId")
+                        .HasColumnType("integer");
+
                     b.Property<string>("numero")
                         .HasColumnType("text");
+
+                    b.HasIndex("PedidoId");
 
                     b.HasDiscriminator().HasValue("CartaoDeCredito");
                 });
@@ -139,7 +150,7 @@ namespace prova_AnaliseProjeto.Migrations
                         .HasForeignKey("ConsumidorId");
 
                     b.HasOne("prova_AnaliseProjeto.Models.Pagamento", "Pagamento")
-                        .WithMany("Pedido")
+                        .WithMany()
                         .HasForeignKey("PagamentoId");
 
                     b.Navigation("Consumidor");
@@ -156,12 +167,25 @@ namespace prova_AnaliseProjeto.Migrations
                     b.Navigation("Pedido");
                 });
 
-            modelBuilder.Entity("prova_AnaliseProjeto.Models.Consumidor", b =>
+            modelBuilder.Entity("prova_AnaliseProjeto.Models.Boleto", b =>
                 {
+                    b.HasOne("prova_AnaliseProjeto.Models.Pedido", "Pedido")
+                        .WithMany()
+                        .HasForeignKey("PedidoId");
+
                     b.Navigation("Pedido");
                 });
 
-            modelBuilder.Entity("prova_AnaliseProjeto.Models.Pagamento", b =>
+            modelBuilder.Entity("prova_AnaliseProjeto.Models.CartaoDeCredito", b =>
+                {
+                    b.HasOne("prova_AnaliseProjeto.Models.Pedido", "Pedido")
+                        .WithMany()
+                        .HasForeignKey("PedidoId");
+
+                    b.Navigation("Pedido");
+                });
+
+            modelBuilder.Entity("prova_AnaliseProjeto.Models.Consumidor", b =>
                 {
                     b.Navigation("Pedido");
                 });

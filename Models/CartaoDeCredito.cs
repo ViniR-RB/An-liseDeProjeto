@@ -9,5 +9,7 @@ namespace prova_AnaliseProjeto.Models
     {
         [Display(Name = "Código")]
         public string? numero { get; set; }
+
+        public Pedido? Pedido { get; set; }
     }
 }

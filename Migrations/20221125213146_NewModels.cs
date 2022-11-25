@@ -31,9 +31,11 @@ namespace prova_AnaliseProjeto.Migrations
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     DateTime = table.Column<DateTime>(type: "timestamp without time zone", nullable: false),
-                    Valor = table.Column<double>(type: "double precision", nullable: true),
                     Discriminator = table.Column<string>(type: "text", nullable: false),
-                    numero = table.Column<string>(type: "text", nullable: true)
+                    Valor = table.Column<double>(type: "double precision", nullable: true),
+                    Boleto_PedidoId = table.Column<int>(type: "integer", nullable: true),
+                    numero = table.Column<string>(type: "text", nullable: true),
+                    PedidoId = table.Column<int>(type: "integer", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -85,6 +87,16 @@ namespace prova_AnaliseProjeto.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Pagamento_Boleto_PedidoId",
+                table: "Pagamento",
+                column: "Boleto_PedidoId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Pagamento_PedidoId",
+                table: "Pagamento",
+                column: "PedidoId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Pedido_ConsumidorId",
                 table: "Pedido",
                 column: "ConsumidorId");
@@ -98,10 +110,32 @@ namespace prova_AnaliseProjeto.Migrations
                 name: "IX_Produto_PedidoId",
                 table: "Produto",
                 column: "PedidoId");
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_Pagamento_Pedido_Boleto_PedidoId",
+                table: "Pagamento",
+                column: "Boleto_PedidoId",
+                principalTable: "Pedido",
+                principalColumn: "Id");
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_Pagamento_Pedido_PedidoId",
+                table: "Pagamento",
+                column: "PedidoId",
+                principalTable: "Pedido",
+                principalColumn: "Id");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropForeignKey(
+                name: "FK_Pagamento_Pedido_Boleto_PedidoId",
+                table: "Pagamento");
+
+            migrationBuilder.DropForeignKey(
+                name: "FK_Pagamento_Pedido_PedidoId",
+                table: "Pagamento");
+
             migrationBuilder.DropTable(
                 name: "Produto");
 

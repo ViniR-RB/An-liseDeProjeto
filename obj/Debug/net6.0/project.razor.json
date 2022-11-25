@@ -16298,8 +16298,83 @@
   "RootNamespace": "prova_AnaliseProjeto",
   "Documents": [
     {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/CartaoDeCredito/Create.cshtml",
+      "TargetPath": "Views\\CartaoDeCredito\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Consumidor/Create.cshtml",
+      "TargetPath": "Views\\Consumidor\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Produto/Edit.cshtml",
+      "TargetPath": "Views\\Produto\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/CartaoDeCredito/Delete.cshtml",
+      "TargetPath": "Views\\CartaoDeCredito\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Pagamento/Index.cshtml",
+      "TargetPath": "Views\\Pagamento\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Consumidor/Details.cshtml",
+      "TargetPath": "Views\\Consumidor\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Pedido/Create.cshtml",
+      "TargetPath": "Views\\Pedido\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Boleto/Edit.cshtml",
+      "TargetPath": "Views\\Boleto\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Pedido/Delete.cshtml",
+      "TargetPath": "Views\\Pedido\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/CartaoDeCredito/Details.cshtml",
+      "TargetPath": "Views\\CartaoDeCredito\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Produto/Delete.cshtml",
+      "TargetPath": "Views\\Produto\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Pedido/Details.cshtml",
+      "TargetPath": "Views\\Pedido\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Pagamento/Edit.cshtml",
+      "TargetPath": "Views\\Pagamento\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Produto/Index.cshtml",
+      "TargetPath": "Views\\Produto\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Consumidor/Edit.cshtml",
+      "TargetPath": "Views\\Consumidor\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16318,8 +16393,33 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Consumidor/Index.cshtml",
+      "TargetPath": "Views\\Consumidor\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Pedido/Edit.cshtml",
+      "TargetPath": "Views\\Pedido\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Boleto/Delete.cshtml",
+      "TargetPath": "Views\\Boleto\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Pedido/Index.cshtml",
+      "TargetPath": "Views\\Pedido\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Pagamento/Details.cshtml",
+      "TargetPath": "Views\\Pagamento\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16328,8 +16428,58 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Boleto/Create.cshtml",
+      "TargetPath": "Views\\Boleto\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Produto/Details.cshtml",
+      "TargetPath": "Views\\Produto\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Consumidor/Delete.cshtml",
+      "TargetPath": "Views\\Consumidor\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Pagamento/Delete.cshtml",
+      "TargetPath": "Views\\Pagamento\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Boleto/Index.cshtml",
+      "TargetPath": "Views\\Boleto\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Produto/Create.cshtml",
+      "TargetPath": "Views\\Produto\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/CartaoDeCredito/Edit.cshtml",
+      "TargetPath": "Views\\CartaoDeCredito\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Boleto/Details.cshtml",
+      "TargetPath": "Views\\Boleto\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/CartaoDeCredito/Index.cshtml",
+      "TargetPath": "Views\\CartaoDeCredito\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/viniroosevelt/Área de Trabalho/prova AnaliseProjeto/Views/Pagamento/Create.cshtml",
+      "TargetPath": "Views\\Pagamento\\Create.cshtml",
       "FileKind": "mvc"
     }
   ],
