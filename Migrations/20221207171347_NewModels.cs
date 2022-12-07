@@ -33,6 +33,8 @@ namespace prova_AnaliseProjeto.Migrations
                     DateTime = table.Column<DateTime>(type: "timestamp without time zone", nullable: false),
                     Discriminator = table.Column<string>(type: "text", nullable: false),
                     Valor = table.Column<double>(type: "double precision", nullable: true),
+                    data_de_vencimento = table.Column<DateTime>(type: "timestamp without time zone", nullable: true),
+                    cod_de_barra = table.Column<string>(type: "text", nullable: true),
                     numero = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>

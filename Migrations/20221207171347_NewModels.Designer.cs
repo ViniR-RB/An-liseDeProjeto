@@ -12,7 +12,7 @@ using prova_AnaliseProjeto.Models;
 namespace prova_AnaliseProjeto.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20221125215207_NewModels")]
+    [Migration("20221207171347_NewModels")]
     partial class NewModels
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -119,6 +119,12 @@ namespace prova_AnaliseProjeto.Migrations
             modelBuilder.Entity("prova_AnaliseProjeto.Models.Boleto", b =>
                 {
                     b.HasBaseType("prova_AnaliseProjeto.Models.Pagamento");
+
+                    b.Property<string>("cod_de_barra")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("data_de_vencimento")
+                        .HasColumnType("timestamp without time zone");
 
                     b.HasDiscriminator().HasValue("Boleto");
                 });

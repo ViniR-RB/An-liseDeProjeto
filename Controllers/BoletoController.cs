@@ -53,7 +53,7 @@ namespace prova_AnaliseProjeto.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,DateTime,Discriminator,Valor")] Boleto boleto)
+        public async Task<IActionResult> Create([Bind("data_de_vencimento,cod_de_barra,Id,DateTime,Discriminator,Valor")] Boleto boleto)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace prova_AnaliseProjeto.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,DateTime,Discriminator,Valor")] Boleto boleto)
+        public async Task<IActionResult> Edit(int id, [Bind("data_de_vencimento,cod_de_barra,Id,DateTime,Discriminator,Valor")] Boleto boleto)
         {
             if (id != boleto.Id)
             {

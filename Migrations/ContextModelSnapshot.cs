@@ -118,6 +118,12 @@ namespace prova_AnaliseProjeto.Migrations
                 {
                     b.HasBaseType("prova_AnaliseProjeto.Models.Pagamento");
 
+                    b.Property<string>("cod_de_barra")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("data_de_vencimento")
+                        .HasColumnType("timestamp without time zone");
+
                     b.HasDiscriminator().HasValue("Boleto");
                 });
 

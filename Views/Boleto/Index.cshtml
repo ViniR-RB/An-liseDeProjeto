@@ -13,6 +13,12 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.data_de_vencimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cod_de_barra)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.DateTime)
             </th>
             <th>
@@ -27,6 +33,12 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.data_de_vencimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cod_de_barra)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.DateTime)
             </td>

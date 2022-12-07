@@ -12,6 +12,16 @@
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="data_de_vencimento" class="control-label"></label>
+                <input asp-for="data_de_vencimento" class="form-control" />
+                <span asp-validation-for="data_de_vencimento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cod_de_barra" class="control-label"></label>
+                <input asp-for="cod_de_barra" class="form-control" />
+                <span asp-validation-for="cod_de_barra" class="text-danger"></span>
+            </div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
                 <label asp-for="DateTime" class="control-label"></label>
